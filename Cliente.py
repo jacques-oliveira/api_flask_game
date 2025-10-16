@@ -10,7 +10,7 @@ import requests
 #%%
 class Cliente:
     def __init__(self):
-        set.url = 'https://www.gamerpower.com/api'
+        self.url = 'https://www.gamerpower.com/api'
     
     def list_objects(self):
         response = requests.get(self.url+'/giveaways')
