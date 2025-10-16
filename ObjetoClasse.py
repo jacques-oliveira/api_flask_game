@@ -5,6 +5,7 @@ Created on Thu Oct 16 16:18:56 2025
 
 @author: jacques
 """
+from datetime import datetime
 
 class ObjetoClasse:
     def __init__(self, data: dict):

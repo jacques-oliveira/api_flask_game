@@ -22,9 +22,10 @@ def obter_dados():
     dados = cliente.list_objects()
     return jsonify([{'title': g.title, 'image': g.image} for g in dados])
 
+@app.route('/exibir')
 def exibir_conteudo():
     dados = cliente.list_objects()
-    return render_template(dados.html, dados = dados)
+    return render_template('dados.html', dados = dados)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port= 8080, debug = True)

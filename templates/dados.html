@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>API</title>
+    </head>
+    <body>
+        {% for g in dados %}
+            <div>
+                <h2>
+                    {{g.title}}
+                </h2>
+                <img src ="{{g.image}}" alt="{{g.title}}" width="200">
+            </div>
+        {% endfor %}
+    </body>
+</html>
